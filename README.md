@@ -13,8 +13,6 @@ Uma landing page desenvolvida para o cantor Jefferson Moraes, simulando sua pág
 ### Cards Musicais
 ![Cards](./print2.png)
 
-### Visualização Mobile
-![Mobile](./print3.png)
 
 ## Sobre o Projeto
 
