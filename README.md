@@ -65,7 +65,7 @@ O projeto utiliza uma paleta de cores escura com tons de azul:
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/jefferson-moraes-landing-page]
+   git clone [https://github.com/FaculdadeJV/Landing_Page.git]
    ```
 
 2. Abra o arquivo `index.html` no navegador
