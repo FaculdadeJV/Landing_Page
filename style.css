@@ -1,0 +1,173 @@
+/* RESET PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/Foto2.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #111;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* MENU SUPERIOR */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid #3d5a80; 
+    backdrop-filter: blur(10px);
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c2a379; 
+}
+
+/* CONTAINER */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 450px 1fr;
+    grid-auto-rows: min-content; 
+    gap: 20px;
+    padding: 120px 40px 50px 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: start; 
+}
+
+/* POSICIONAMENTO DOS CARDS */
+
+/* Coluna da Esquerda (Cards 1 a 5) */
+.card:nth-child(1) { grid-column: 1; grid-row: 1; }
+.card:nth-child(2) { grid-column: 1; grid-row: 2; }
+.card:nth-child(3) { grid-column: 1; grid-row: 3; }
+.card:nth-child(4) { grid-column: 1; grid-row: 4; }
+.card:nth-child(5) { grid-column: 1; grid-row: 5; }
+
+/* Coluna da Direita (Cards 6 a 10) */
+.card:nth-child(6) { grid-column: 3; grid-row: 1; }
+.card:nth-child(7) { grid-column: 3; grid-row: 2; }
+.card:nth-child(8) { grid-column: 3; grid-row: 3; }
+.card:nth-child(9) { grid-column: 3; grid-row: 4; }
+.card:nth-child(10) { grid-column: 3; grid-row: 5; }
+
+/* DESIGN DOS CARDS (EFEITO DE VIDRO) */
+article.card {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    justify-self: center;
+}
+
+article.card:hover {
+    transform: translateY(-5px);
+    border-color: #c2a379;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* CONTEÚDO DO CARD */
+article.card h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #3d5a80;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+article.card p {
+    color: #e0e0e0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-style: italic;
+    max-height: 120px;
+    overflow-y: auto;
+    padding-right: 8px;
+    margin-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #3d5a80 transparent;
+}
+
+/* PLAYER DE ÁUDIO */
+audio {
+    width: 100%;
+    height: 30px;
+    filter: invert(100%) opacity(0.8); 
+}
+
+article.card footer {
+    color: #c2a379;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+}
+
+
+/* RODAPÉ DA PÁGINA */
+.rodape-pagina {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    backdrop-filter: blur(10px);
+    border-top: 2px solid #3d5a80; 
+    color: #c2a379; 
+    padding: 30px 10%; 
+    text-align: center;
+    margin-top: 60px; 
+    position: relative;
+    clear: both;
+}
+
+.rodape-pagina p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+
